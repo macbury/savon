@@ -40,7 +40,7 @@ module Savon
         http.url = soap.endpoint
         http.body = soap.to_xml
         http.headers["Content-Type"] = ContentType[soap.version]
-        http.headers["Content-Length"] = 0
+        http.headers["Content-Length"] = "0"
         http
       end
 
